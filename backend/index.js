@@ -3,9 +3,11 @@ const Zod = require("zod")
 const {createTodoSchema} = require("./types.js")
 const {mardownTodoSchema} = require("./types.js")
 const { todoModel} = require("./db.js")
+const cors = require("cors")
 
 
-const app = express()
+const app = express();
+app.use(cors());
 const port = 3000;
 
 app.use(express.json());
@@ -39,7 +41,7 @@ app.post('/todo', async (req,res)=>{
 
 app.get('/todos', async (req,res)=>{
     const allTodos = await todoModel.find({});
-    // console.log(allTodos)
+    console.log(allTodos)
 
     res.json({
         allTodos
