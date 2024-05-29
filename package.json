@@ -1,0 +1,12 @@
+{
+  "name": "project2",
+  "version": "1.0.0",
+  "description": "- anyone can create a todo - anyone can signup - signin - see existing todo - mard as done # todoProject # project2-todo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
