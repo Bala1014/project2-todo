@@ -61,7 +61,7 @@ app.put('/completed', async (req,res)=>{
         return;
     }
 
-    console.log(req.body._id)
+    // console.log(req.body._id)
 
     await todoModel.updateOne({
         _id : req.body._id
