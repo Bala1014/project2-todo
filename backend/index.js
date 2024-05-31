@@ -50,16 +50,16 @@ app.get('/todos', async (req,res)=>{
 })
 
 app.put('/completed', async (req,res)=>{
-    const payload = req.body;
-    const parsedPayload = createTodoSchema.safeParse(payload);
+    // const payload = req.body;
+    // const parsedPayload = createTodoSchema.safeParse(payload);
 
-    if(!parsedPayload.success){
-        res.status(411).json({
-            msg : "invalid input"
-        })
+    // if(!parsedPayload.success){
+    //     res.status(411).json({
+    //         msg : "invalid input"
+    //     })
         
-        return;
-    }
+    //     return;
+    // }
 
     // console.log(req.body._id)
 
