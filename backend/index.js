@@ -41,7 +41,7 @@ app.post('/todo', async (req,res)=>{
 
 app.get('/todos', async (req,res)=>{
     const allTodos = await todoModel.find({});
-    console.log(allTodos)
+    // console.log(allTodos)
 
     res.json({
         allTodos
