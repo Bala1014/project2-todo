@@ -30,7 +30,7 @@ app.post('/todo', async (req,res)=>{
         completed : false
     })
 
-    console.log(todo)
+    // console.log(todo)
 
     todo.save();
 
@@ -79,12 +79,9 @@ app.put('/completed', async (req,res)=>{
 
 
 
-
-
-
-app.get('/',(req,res)=>{
-    res.send("he");
-});
+// app.get('/',(req,res)=>{
+//     // res.send("he");
+// });
 
 app.listen(port, ()=>{
     console.log(`ruuning on port ${port}`);

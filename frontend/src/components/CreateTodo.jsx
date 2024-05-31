@@ -8,11 +8,9 @@ export function CreateTodo(){
 
     return <div>
         <input type="text" placeholder="title"  onChange={(val)=>{
-            // console.log(val)
             setTitle(val.target.value);
         }} /> <br />
         <input type="text" placeholder="description"  onChange={(val)=>{
-            // console.log(val)
             setDescription(val.target.value);
         }} /> <br />
 

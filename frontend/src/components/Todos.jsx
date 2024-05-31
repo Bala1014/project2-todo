@@ -1,6 +1,5 @@
 export function Todos({todos}){
-    // console.log("reached 2")
-    // console.log(todos, "reached")
+    
     return(
     <div>
         { todos.map((todo)=>{
