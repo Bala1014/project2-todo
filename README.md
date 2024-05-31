@@ -8,4 +8,6 @@
 
 works fine but lacks debouncings , send 100s of reqs every second
 
+w/o optimization ==> 100s of fetch reqs are sent, we want to minimise it
+
 # project2-todo
